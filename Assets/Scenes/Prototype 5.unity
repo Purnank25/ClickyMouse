@@ -249,6 +249,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 272307440}
+  - component: {fileID: 272307441}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -271,6 +272,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &272307441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 272307439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83e8cd29b69a00b4b9e01edd3cacaad4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targets:
+  - {fileID: 4621298526308554155}
+  - {fileID: 743887089281985775}
+  - {fileID: 11290972889543367}
+  - {fileID: 4927628488987817785}
 --- !u!1 &494445611
 GameObject:
   m_ObjectHideFlags: 0
@@ -807,6 +825,16 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2120347543}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &11290972889543367 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 866164341783303260, guid: 9830ea46573650947a445f6cd4f85225, type: 3}
+  m_PrefabInstance: {fileID: 4404517533912999779}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &743887089281985775 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5042048104243443879, guid: 40ab8e3de866a6944a2c9bb9dddf69d2, type: 3}
+  m_PrefabInstance: {fileID: 8779505740124665156}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1485792445343265114
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -818,6 +846,10 @@ PrefabInstance:
     - target: {fileID: 3832927746695113353, guid: d24fc3f7e97d04c468fdff05a0a77f85, type: 3}
       propertyPath: m_Name
       value: Good3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3832927746695113353, guid: d24fc3f7e97d04c468fdff05a0a77f85, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4016151361238808046, guid: d24fc3f7e97d04c468fdff05a0a77f85, type: 3}
       propertyPath: m_LocalPosition.x
@@ -876,6 +908,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Good2
       objectReference: {fileID: 0}
+    - target: {fileID: 866164341783303260, guid: 9830ea46573650947a445f6cd4f85225, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8587655022962392327, guid: 9830ea46573650947a445f6cd4f85225, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.05
@@ -921,6 +957,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830ea46573650947a445f6cd4f85225, type: 3}
+--- !u!1 &4621298526308554155 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7989219991798648716, guid: 0ff7b2f2e06138f4e8d8f37cf9bd641d, type: 3}
+  m_PrefabInstance: {fileID: 4772316199966513137}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4772316199966513137
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -973,11 +1014,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bad1
       objectReference: {fileID: 0}
+    - target: {fileID: 7989219991798648716, guid: 0ff7b2f2e06138f4e8d8f37cf9bd641d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ff7b2f2e06138f4e8d8f37cf9bd641d, type: 3}
+--- !u!1 &4927628488987817785 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3832927746695113353, guid: d24fc3f7e97d04c468fdff05a0a77f85, type: 3}
+  m_PrefabInstance: {fileID: 1485792445343265114}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8779505740124665156
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1029,6 +1079,10 @@ PrefabInstance:
     - target: {fileID: 5042048104243443879, guid: 40ab8e3de866a6944a2c9bb9dddf69d2, type: 3}
       propertyPath: m_Name
       value: Good1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5042048104243443879, guid: 40ab8e3de866a6944a2c9bb9dddf69d2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
