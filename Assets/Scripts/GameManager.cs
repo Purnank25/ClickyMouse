@@ -10,12 +10,12 @@ public class GameManager : MonoBehaviour
     public List<GameObject> targets;
     private float spwanRate = 1.0f;
     public TextMeshProUGUI scoreText;
-    private int score;
+    private int score = 0;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         StartCoroutine(SpwanTarget());
-        UpdateScore(5);
+        UpdateScore(0);
     }
 
     // Update is called once per frame
@@ -30,11 +30,13 @@ public class GameManager : MonoBehaviour
             yield return new WaitForSeconds(spwanRate);
             int index = UnityEngine.Random.Range(0, targets.Count);
             Instantiate(targets[index]);
+           
         }
     }
-    void UpdateScore(int scoreToAdd)
+    public void UpdateScore(int scoreToAdd)
     {
-        score = 0;
+        
+        score += scoreToAdd;
         scoreText.text = "Score: " + score; 
     }
     
