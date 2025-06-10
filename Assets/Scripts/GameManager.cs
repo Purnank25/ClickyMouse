@@ -16,12 +16,12 @@ public class GameManager : MonoBehaviour
     private int score = 0;
     public bool isGameActive;
     public Button restartButton;
+    public GameObject titleScreen;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        isGameActive = true;
-        StartCoroutine(SpwanTarget());
-        UpdateScore(0);
+        
         
     }
 
@@ -55,6 +55,16 @@ public class GameManager : MonoBehaviour
     public void RestartGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+    public void StartGame(int difficulty)
+    {
+        isGameActive = true;
+        score = 0;
+        spwanRate /= difficulty;
+        StartCoroutine(SpwanTarget());
+        UpdateScore(0);
+        titleScreen.SetActive(false);
+
     }
     
 }
